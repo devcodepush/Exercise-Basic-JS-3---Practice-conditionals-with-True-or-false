@@ -17,41 +17,48 @@ Display how many points the user has on the console.
 
 // Gets user input
 
-const R1 = prompt("Tomatoes are fruits, not vegetables: true or false");
-const R2 = prompt("You should drink 8 glasses of water: true or false");
-const R3 = prompt("Fishes have only three seconds of memory: true or false");
-const R4 = prompt(
+//name varriables are changed with more INFORMATIVE names >> responseOne instead of R1 , responseTwo
+//and responseThree instead of R3.
+
+const responseOne = prompt(
+  "Tomatoes are fruits, not vegetables: true or false"
+);
+const responseTwo = prompt(
+  "You should drink 8 glasses of water: true or false"
+);
+const responseThree = prompt(
+  "Fishes have only three seconds of memory: true or false"
+);
+const responseFour = prompt(
   "The Great Wall of China is the only man made structure visible from space The Great Wall of China: true or false"
 );
 
-function myFunction(R) {
-  {
-    if (R1 === "true") {
-      console.log("correct");
-    } else if (R1 !== "true") {
-      console.log("incorrect");
-    }
+//this function doesn't need a parameter, so you can remove it.
+//You have put a "R" parameter but you never use it
+// you just have 2: this or that. So a super simple if and else pattern is all you need
+// if with else if is useful when having more than 2 scenarios!
+
+function responseChecker() {
+  if (responseOne === "true") {
+    console.log("correct");
+  } else {
+    console.log("incorrect");
   }
-  {
-    if (R2 === "true") {
-      console.log("correct");
-    } else if (R2 !== "true") {
-      console.log("incorrect");
-    }
+  if (responseTwo === "true") {
+    console.log("correct");
+  } else {
+    console.log("incorrect");
   }
-  {
-    if (R3 === "false") {
-      console.log("correct");
-    } else if (R3 !== "false") {
-      console.log("incorrect");
-    }
+  if (responseThree === "false") {
+    console.log("correct");
+  } else {
+    console.log("incorrect");
   }
-  {
-    if (R4 === "true") {
-      console.log("correct");
-    } else if (R4 !== "true") {
-      console.log("incorrect");
-    }
+  if (responseFour === "true") {
+    console.log("correct");
+  } else {
+    console.log("incorrect");
   }
 }
-myFunction();
+
+responseChecker();
