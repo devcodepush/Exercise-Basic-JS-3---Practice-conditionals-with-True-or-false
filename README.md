@@ -2,7 +2,7 @@
 Exercise(Practice-conditionals-with-True-or-false)
 
 ### GitHUb Page
-Click [HERE](https://armanpartovi.github.io/Exercise-Basic-JS-3---Practice-conditionals-with-True-or-false/)
+Click [HERE](https://devcodepush.github.io/Exercise-Basic-JS-3---Practice-conditionals-with-True-or-false/)
 
 ##### Using prompt, variables and , ask questions to the users and display the result on the console.
 
